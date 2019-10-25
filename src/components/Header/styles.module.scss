@@ -1,0 +1,37 @@
+.header {
+    width: 100%;
+    display: block;
+    padding: 20px 0;
+    z-index: 99;
+    box-shadow: 0 15px 15px #00000011;
+
+    .contents {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+
+        .brand {
+            font-weight: bold;
+            margin-left: 10px;
+        }
+        .expand {
+            flex: 1;
+        }
+
+        ul.navMenu {
+            list-style-type: none;
+            display: flex;
+            align-items: center;
+
+            li {
+                padding: 0 15px;
+            }
+        }
+
+        img.socialIcon {
+            width: 25px;
+            height: 25px;
+            margin: 0 0 0 10px;
+        }
+    }
+}
