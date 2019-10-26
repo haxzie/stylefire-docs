@@ -5,11 +5,11 @@ let useTheme = () => { };
 
 
 useTheme = () => {
-    let localTheme = "";
+    let localTheme = null;
     if (typeof window !== 'undefined') { // fix for SSR rendering errors
         localTheme = styleFire.getTheme().name;
     }
-    const [currentTheme, setCurrentTheme] = useState(localTheme);
+    const [currentTheme, setCurrentTheme] = useState(localTheme || 'light');
 
     function setTheme(theme) {
         styleFire.apply(theme);
