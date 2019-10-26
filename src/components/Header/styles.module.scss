@@ -4,15 +4,23 @@
     padding: 20px 0;
     z-index: 99;
     box-shadow: 0 15px 15px #00000011;
+    background-color: var(--color-header-background);
+    position: absolute;
+    top: 1;
 
     .contents {
         display: flex;
         flex-direction: row;
         align-items: center;
 
+        i {
+            color: var(--color-header-font);
+        }
+
         .brand {
             font-weight: bold;
             margin-left: 10px;
+            color: var(--color-header-font);
         }
         .expand {
             flex: 1;
@@ -25,10 +33,11 @@
 
             li {
                 padding: 0 15px;
+                color: var(--color-header-font);
             }
         }
 
-        img.socialIcon {
+        .socialIcon {
             width: 25px;
             height: 25px;
             margin: 0 0 0 10px;

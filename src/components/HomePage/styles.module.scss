@@ -1,0 +1,116 @@
+.homepageBackground {
+  background-color: var(--color-body-background);
+  color: var(--color-body-font);
+  height: 100%;
+  padding-top: 100px;
+  display: flex;
+  flex-direction: column;
+
+  h1 {
+    color: var(--color-body-font);
+    padding-top: 50px;
+    font-size: 1.5em;
+    line-height: 1.5em;
+  }
+
+  .expand {
+    flex: 1;
+  }
+
+  .buttonArea {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+
+    .themeButton {
+      padding: 10px 20px;
+      margin: 10px;
+      background-color: var(--color-button-background);
+      color: var(--color-button-font);
+      text-transform: capitalize;
+      outline: none;
+      transition: 0.3s all ease-in-out;
+      border-radius: 50px;
+
+      &.active {
+          background-color: var(--color-button-active-background);
+      }
+    }
+  }
+
+  .window {
+    background-color: var(--color-screen-background);
+    border-radius: 7px;
+    box-shadow: 0 10px 15px #00000023;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 700px;
+    margin: 20px auto;
+
+    header {
+      padding: 10px;
+      background: var(--color-screen-titlebar-background);
+      border-radius: 7px 7px 0 0;
+      box-shadow: 0 10px 15px #00000023;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+
+      .title {
+        color: var(--color-screen-titlebar-font);
+        padding: 5px 15px;
+      }
+
+      ul.buttonRow {
+        list-style-type: none;
+        display: flex;
+        margin: 0;
+
+        li {
+          margin: 10px 10px 10px 5px;
+          width: 20px;
+          height: 20px;
+          border-radius: 50%;
+
+          &.minimize {
+            background-color: #ec9717;
+          }
+
+          &.maximize {
+            background-color: #24d460;
+          }
+
+          &.close {
+            background-color: #ec1731;
+          }
+        }
+      }
+    }
+
+    .contentArea {
+      padding: 50px;
+
+      .captionArea {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+
+        p {
+            color: var(--color-screen-font);
+        }
+      }
+
+      pre {
+        padding: 20px 15px;
+        background-color: var(--color-screen-code-background);
+        border-radius: 5px;
+        color: var(--color-screen-code-font);
+      }
+    }
+  }
+}
