@@ -1,6 +1,7 @@
 import './src/styles/global.scss';
-
 import * as stylefire from '@haxzie/stylefire';
+
+
 
 const lightTheme = {
     color: {
