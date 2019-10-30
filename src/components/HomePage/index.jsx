@@ -21,6 +21,7 @@ function HomePage() {
                                 <button 
                                     className={`${styles.themeButton} ${item === currentTheme ? styles.active : ``}`}
                                     onClick={() => setTheme(item)}
+                                    key={item}
                                     >{item}</button>
                                 )
                         }
